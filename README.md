@@ -1,13 +1,15 @@
-# Features
+# Nautilus Python Extension - Poe-m
+
+## Features
 you can create new menus for rightclick in Nautilus with one extension and multiple commands in one yaml file:
 
 - you can configure the labels, icons, tips of items and subitems
 - set your command with template which will be executed when the user clicks
 - set your conditions when the item or tree is executed based on the selection of user and os
 
-# How to use
+## How to use
 
-## Basic Configuration
+### Basic Configuration
 
 Before you start make sure to install `nautilus-python` with `sudo apt-get install python-nautilus` (see also [python-nautilus](https://gitlab.gnome.org/GNOME/nautilus-python))
 
@@ -31,7 +33,7 @@ Create your yaml file for the items in `HOME_DIR + "/.config/nautilus-poem/items
   click: /do-something.sh {POEM_FILES}
 ```
 
-## Execute your item
+### Execute your item
 
 - you can use the environment vars to template your command
 - the name of the vars are documentated currently in code
@@ -44,7 +46,7 @@ Create your yaml file for the items in `HOME_DIR + "/.config/nautilus-poem/items
 ```
 
 
-## Set conditions for the item (or tree)
+### Set conditions for the item (or tree)
 
 - if no condition is added, it is always displayed
 - else add your conditions by the vars of the code coming from the selection and the os
@@ -56,13 +58,13 @@ Create your yaml file for the items in `HOME_DIR + "/.config/nautilus-poem/items
 ```
 
 
-## Debug or Developing
+### Debug or Developing
 
 - create your yaml config for the settings:`HOME_DIR + "/.config/nautilus-poem/config.yml"` and put `DEBUG: True`
 - give permission for logging: `sudo chmod -R 0773 /var/log/nautilus/nautilus-poem.log`
 - to restart nautilus use: `NAUTILUS_PYTHON_DEBUG=misc nautilus -q`
 
-# Future ideas
+## Future ideas
 
 - implement background items
 - connect to python click / pyproject.toml
