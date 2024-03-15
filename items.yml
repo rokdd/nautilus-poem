@@ -1,0 +1,8 @@
+- label: Best right click ever
+  tip: Click me now
+  subitems:
+     - label: 2nd level right
+- label: Flatten folder
+  conditions:
+     - "directory_count > 0"
+  click: /../example.sh {POEM_FILES}

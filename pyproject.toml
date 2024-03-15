@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nautilus-sendto"
+version = "0.1.0"
+description = ""
+authors = ["rokdd <rokdd@gmx.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+poethepoet = "^0.25.0"
+click = "^8.1.7"
+gondola = {git = "https://github.com/rokdd/gondola.git"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
