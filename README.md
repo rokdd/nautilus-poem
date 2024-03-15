@@ -11,7 +11,7 @@ you can create new menus for rightclick in Nautilus with one extension and multi
 
 Create your yaml file for the items in `HOME_DIR + "/.config/nautilus-poem/items.yml"`
 
-'''
+```
 - label: Best right click ever
   tip: Click me now
   subitems:
@@ -20,7 +20,7 @@ Create your yaml file for the items in `HOME_DIR + "/.config/nautilus-poem/items
   conditions:
      - "directory_count > 0"
   click: /do-something.sh {POEM_FILES}
-'''
+```
 
 ## Execute your item
 
@@ -29,10 +29,10 @@ Create your yaml file for the items in `HOME_DIR + "/.config/nautilus-poem/items
 - you can also use the Environment vars of system
 - access the vars like python format https://docs.python.org/3/library/string.html#format-string-syntax : `{POEM_FILES}` `{POEM_FILES[0]}`
 
-'''
+```
 - label: Flatten folder
   click: /do-something.sh {POEM_FILES}
-'''
+```
 
 
 ## Set conditions for the item (or tree)
@@ -40,11 +40,11 @@ Create your yaml file for the items in `HOME_DIR + "/.config/nautilus-poem/items
 - if no condition is added, it is always displayed
 - else add your conditions by the vars of the code coming from the selection and the os
 
-'''
+```
 - label: Flatten folder
   - "directory_count > 0"
   click: /do-something.sh {POEM_FILES}
-'''
+```
 
 
 ## Debug or Developing
