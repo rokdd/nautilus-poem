@@ -1,5 +1,6 @@
 https://gitlab.gnome.org/GNOME/nautilus-python
 
+add how to copy files
 
 # cmds
 

@@ -133,3 +133,4 @@ cython_debug/
 
 #for the project configuration
 *.code-workspace
+DEV.md
