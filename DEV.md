@@ -1,7 +1,6 @@
 https://gitlab.gnome.org/GNOME/nautilus-python
 
 add how to copy files
-
 # cmds
 
 to restart: NAUTILUS_PYTHON_DEBUG=misc nautilus -q

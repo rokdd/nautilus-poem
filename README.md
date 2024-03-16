@@ -13,6 +13,8 @@ you can create new menus for rightclick in Nautilus with one extension and multi
 
 Before you start make sure to install `nautilus-python` with `sudo apt-get install python-nautilus` (see also [python-nautilus](https://gitlab.gnome.org/GNOME/nautilus-python))
 
+Or try the installer `curl https://raw.githubusercontent.com/rokdd/nautilus-poem/master/install.sh | bash ; nautilus -q`
+
 Copy the file to the folder where `python-nautilus` checks:
 
  1. `$XDG_DATA_HOME/nautilus-python/extensions` (i.e. `~/.local/share/…`)
