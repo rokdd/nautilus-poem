@@ -20,10 +20,10 @@ style_print() {
 style_print "Start install.." 'gray'
 #alternative way to download should not be nessary
 
-$curl -H 'Cache-Control: no-cache' --silent https://raw.githubusercontent.com/rokdd/nautilus-poem/master/nautilus-poem.py > /usr/share/nautilus-python/extensions/nautilus-poem.py
-style_print "Installed nautilus-poem" 'green'
+sudo $curl -H 'Cache-Control: no-cache' --silent https://raw.githubusercontent.com/rokdd/nautilus-poem/master/nautilus-poem.py > /usr/share/nautilus-python/extensions/nautilus-poem.py
+style_print "Installed nautilus-poem" 'green'"
 mkdir -p ~/.config/nautilus-poem/
 $curl -H 'Cache-Control: no-cache' --silent https://raw.githubusercontent.com/rokdd/nautilus-poem/master/items.yml > ~/.config/nautilus-poem/items.yml
-style_print "Created config in ~/.config/nautilus-poem/
+style_print "Created config in ~/.config/nautilus-poem/"
 style_print "If cmd is not working, reload the nautilus with 'nautilus -q'. For help or getting started visit github.com/rokdd/nautilus-poem"
 exec $SHELL
