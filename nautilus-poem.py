@@ -11,8 +11,7 @@ from pathlib import Path
 import logging
 import subprocess
 import shlex
-
-
+from urllib.parse import unquote
 
 import ast
 import operator
@@ -226,7 +225,8 @@ class NautilusPoem(GObject.GObject, Nautilus.MenuProvider):
         files,
     ) -> None:
         
-        files=[f.get_uri()[7:] for f in files]
+        files=[unquote(f.get_uri()[7:]) for f in files]
+
 
         #build the vars to replace
         env_vars={
