@@ -24,8 +24,9 @@ sudo $curl -H 'Cache-Control: no-cache' --silent https://raw.githubusercontent.c
 style_print "Installed nautilus-poem" 'green'
 mkdir -p "~/.config/nautilus-poem/"
 # only update file when it is not yet exists
-if [ ! -f "~/.config/nautilus-poem/items.yml" ]; then
-sudo $curl -H 'Cache-Control: no-cache' --silent https://raw.githubusercontent.com/rokdd/nautilus-poem/master/items.yml > ~/.config/nautilus-poem/items.yml
+if [ ! -f "~/.config/nautilus-poem/items.yml" ]
+then
+#sudo $curl -H 'Cache-Control: no-cache' --silent https://raw.githubusercontent.com/rokdd/nautilus-poem/master/items.yml > ~/.config/nautilus-poem/items.yml
 style_print "Created config in ~/.config/nautilus-poem/"
 fi
 style_print "If cmd is not working, reload the nautilus with 'nautilus -q'. For help or getting started visit github.com/rokdd/nautilus-poem"

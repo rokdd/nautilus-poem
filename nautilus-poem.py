@@ -225,7 +225,7 @@ class NautilusPoem(GObject.GObject, Nautilus.MenuProvider):
         files,
     ) -> None:
         
-        files=[unquote(f.get_uri()[7:]) for f in files]
+        files=['"'+unquote(f.get_uri()[7:])+'"' for f in files]
 
 
         #build the vars to replace
